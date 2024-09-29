@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Υποστήριξη</title>
+  </head>
+  
+  <body>
+    <header>
+      <nav id="navigation">
+          <a href="index.html">
+            <img src="images/logo2.png" alt="Logo" width="150" >
+          </a>
+            <strong>
+              <a href="index.html">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a> &nbsp;
+              <a href="categories.html">ΚΑΤΗΓΟΡΙΕΣ</a>&nbsp;
+              <a href="about-us.html">ΠΟΙΟΙ ΕΙΜΑΣΤΕ</a>&nbsp;
+              <a href="tech.html">ΥΠΟΣΤΗΡΙΞΗ</a>
+            </strong>
+          </div>
+          <hr>
+          <br/>
+        </div>
+      </nav>
+    </header>
+
+  <main>
+    <h2>Τεχνική Υποστήριξη</h2>
+    <img src="images/tech.jpg" width="1000" alt="tech support">
+    <article>
+      
+      <h3>Για ό,τι χρειαστείς είμαστε εδώ για σένα!</h3>
+      <p>Αν αντιμετωπίζεις κάποιο τεχνικό ζήτημα με κάποιο προϊον παρακαλούμε συμπλήρωσε την παρακάτω φόρμα
+        επικοινωνιίας!</p>
+    </article>
+
+
+
+    <form action="/sendData" method="GET">
+      <fieldset>
+        <legend>
+          Φόρμα Επικοινωνίας:
+        </legend>
+        <label for="txtName">Ονοματεπώνυμο:</label>
+        <input type="text" id="txtName" name="name" minlength="3" maxlength="40" size="40" required>
+        *
+        <br>
+        <label for="txtEmail">E-mail: </label>
+        <input type="email" id="txtEmail" name="email" size="40">
+        *
+        <br>
+        <label for="txtTel">Τηλέφωνο: </label>
+        <input type="tel" id="txtTel" name="phone" size="15" required>
+        *
+        <br>
+        <label for="txtCode">Κωδικός παραγγελίας: </label>
+        <input type="text" id="txtCode" name="code" size="15" required>
+        *
+        <br>
+        <label for="txtMessage">Σχόλια:</label>
+        <br>
+        <textarea id="txtMessage" name="message" rows="6" cols="40"></textarea>
+        <br>
+        * Τα πεδία είναι υποχρεωτικά
+      </fieldset>
+      <input type="submit" value="Αποστολή">
+      <input type="reset" value="Καθαρισμός">
+    </form>
+    <hr>
+  </main>
+  <footer>
+      <h2>Come Find Us:</h2>
+      <a href="https://facebook.com">
+        <img src="images/facebook.png" alt="Facebook" width="32">
+      </a>
+      <a href="https://www.instagram.com">
+        <img src="images/instagram.png" alt="Instagram">
+      </a>
+      <a href="https://twitter.com">
+        <img src="images/x.png" alt="X-Twitter" width="32">
+      </a>
+      <br>
+      <a href="abouts-us.html">About us</a>
+      <p>&copy; 2023 PostIt</p>
+  </footer>
+</body>
+
+</html>
