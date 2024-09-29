@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=stylesheet.css>
+    <script src="validation.js" defer></script>
+    <title>Φόρμα Εγγραφής Χρήστη</title>
+</head>
+
+<body id="signin">
+    <div class="main-container">
+        <header class="navbar">
+            <nav class="navbar-container">
+                <a class="logo" href="index.html">
+                    <img src="images/logo2.png" alt="Logo">
+                </a>
+                <input type="checkbox" id="checkbox">
+                <div class="hamburger-lines">
+                    <span class="line1 line"></span>
+                    <span class="line2 line"></span>
+                    <span class="line3 line"></span>
+                </div>
+                <ul class="menu-items">
+                    <li><a href="index.html">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a></li>
+                    <li><a href="categories.html">ΚΑΤΗΓΟΡΙΕΣ</a></li>
+                    <li><a href="about-us.html">ΠΟΙΟΙ ΕΙΜΑΣΤΕ</a></li>
+                    <li><a href="tech.html">ΥΠΟΣΤΗΡΙΞΗ</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form id="registrationForm" action="#" method="post" onsubmit="return validateForm()">
+                <fieldset>
+                    <legend>Προσωπικά Στοιχεία</legend>
+                    <label for="fullName">Ονοματεπώνυμο:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="address">Διεύθυνση Κατοικίας:</label>
+                    <input type="text" id="address" name="address" required>
+
+                    <label for="birthdate">Ημερομηνία Γέννησης:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+
+                    <label for="phone">Τηλέφωνο Επικοινωνίας:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Στοιχεία Ταυτοποίησης</legend>
+                    <label for="username">Όνομα Χρήστη:</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="password">Κωδικός Πρόσβασης:</label>
+                    <input type="password" id="password" name="password" required>
+                    <span class="error-message" id="passwordError"></span>
+
+
+                    <label for="confirmPassword">Επιβεβαίωση Κωδικού:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    <span class="error-message" id="confirmPasswordError"></span>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Επιλογές Επικοινωνίας</legend>
+                    <label>Επιλογή Ενημερώσεων:</label>
+                    <select name="notificationPreference" id="notificationPreference" autocomplete="on" required>
+                        <option value="">Please select an option...</option>
+                        <option value="sms">SMS</option>
+                        <option value="email">Email</option>
+                        <option value="viber">Viber</option>
+                        <option value="whatsapp">WhatsApp</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Αγοραστικό Προφίλ</legend>
+                    <label for="interestedAds">Τύπος Αγγελιών που Ενδιαφέρεστε:</label>
+                    <input list="interestedAdsSuggestions" id="interestedAds" name="interestedAds" autocomplete="on" required>
+                    <datalist id="interestedAdsSuggestions">
+                        <option value="Οχήματα">
+                        <option value="Τεχνολογία">
+                        <option value="Ακίνητα ">
+                        <option value="Είδη Σπιτιού">
+                        <option value="Θέσεις Εργασίας">
+                    </datalist>
+
+                    <label>Εργασιακό Προφίλ:</label>
+                    <input type="text" name="jobProfile">
+
+                    <label>Περιοχές Δραστηριοποίησης:</label>
+                    <input type="text" name="activityAreas">
+                </fieldset>
+
+                <button type="submit">Υποβολή</button>
+            </form>
+        </main>
+        <footer>
+            <h2>Come Find Us:</h2>
+            <div class="social">
+                <a href="https://facebook.com">
+                    <img src="images/facebook.png" alt="Facebook" width="32">
+                </a>
+                <a href="https://www.instagram.com">
+                    <img src="images/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/x.png" alt="X-Twitter" width="32">
+                </a>
+            </div>
+            <a href="abouts-us.html">About us</a>
+            <p>&copy; 2023 PostIt</p>
+        </footer>
+    </div>
+</body>
+
+</html>
