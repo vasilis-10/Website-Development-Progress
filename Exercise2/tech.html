@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+  <link rel="stylesheet" href=stylesheet.css>
+  <meta charset="utf-8">
+  <title>Υποστήριξη</title>
+</head>
+
+<body>
+  <header>
+    <a id="logo" href="index.html">
+      <img src="images/logo2.png" alt="Logo">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a> &nbsp;</li>
+        <li><a href="categories.html">ΚΑΤΗΓΟΡΙΕΣ</a>&nbsp;
+          <ul class="sub-category">
+            <li>Οχήματα
+              <ul class="sub-sub-category">
+                <li><a href="cars.html">Αυτοκίνητα</a></li>
+                <li><a href="#">Μοτοσυκλέτες</a></li>
+                <li><a href="#">Επαγγελματικά οχήματα</a></li>
+                <li><a href="#">Τροχόσπιτα</a></li>
+                <li><a href="#">Ανταλλακτικά</a></li>
+              </ul>
+            </li>
+            <li>Τεχνολογία
+              <ul class="sub-sub-category">
+                <li><a href="smartphones.html">Smartphone</a></li>
+                <li><a href="#">Υπολογιστές</a></li>
+                <li><a href="#">Tablet</a></li>
+                <li><a href="#">Smart TV</a></li>
+                <li><a href="#">Αξεσουάρ</a></li>
+              </ul>
+            </li>
+            <li>Ακίνητα
+              <ul class="sub-sub-category">
+                <li><a href="#">Ενοικιάσεις Κατοικιών</a></li>
+                <li><a href="#">Ενοικιάσεις επαγγελματικών χώρων</a></li>
+                <li><a href="#">Πωλήσεις Κατοικιών</a></li>
+                <li><a href="#">Πωλήσεις επαγγελματικών χώρων</a></li>
+              </ul>
+            </li>
+            <li>Είδη Σπιτιού
+              <ul class="sub-sub-category">
+                <li><a href="#">Έπιπλα</a></li>
+                <li><a href="#">Συσκευές Κουζίνας</a></li>
+                <li><a href="#">Συσκευές Ψυγείου</a></li>
+                <li><a href="#">Συσκευές Πλυντηρίου</a></li>
+                <li><a href="#">Συσκευές Κλιματισμού</a></li>
+              </ul>
+            </li>
+            <li>Θέσεις Εργασίας
+              <ul class="sub-sub-category">
+                <li><a href="#">Full-time </a></li>
+                <li><a href="#">Part-time </a></li>
+                <li><a href="#">Internships</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="about-us.html">ΠΟΙΟΙ ΕΙΜΑΣΤΕ</a>&nbsp;</li>
+        <li><a href="tech.html">ΥΠΟΣΤΗΡΙΞΗ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="tech">
+    <h1>Τεχνική Υποστήριξη</h1>
+    <div>
+      <p>Για ό,τι χρειαστείς είμαστε εδώ για σένα!</p>
+      <p>Αν αντιμετωπίζεις κάποιο ζήτημα με κάποια αγγελία παρακαλούμε συμπλήρωσε την παρακάτω φόρμα
+        επικοινωνιίας!</p>
+      </div>
+    <form action="/sendData" method="GET">
+      <h2>Φόρμα Επικοινωνίας:</h2>
+      <label for="txtName">Ονοματεπώνυμο:</label>
+      <input type="text" id="txtName" name="name" minlength="3" maxlength="40" size="40" required>
+      <p>*</p>
+      <br>
+      <label for="txtEmail">E-mail: </label>
+      <input type="email" id="txtEmail" name="email" size="40">
+      <p>*</p>
+      <br>
+      <label for="txtTel">Τηλέφωνο: </label>
+      <input type="tel" id="txtTel" name="phone" size="15" required>
+      <p>*</p>
+      <br>
+      <label for="txtCode">Κωδικός παραγγελίας: </label>
+      <input type="text" id="txtCode" name="code" size="15" required>
+      <p>*</p>
+      <br>
+      <label for="txtMessage">Σχόλια:</label>
+      <br>
+      <textarea id="txtMessage" name="message" rows="6" cols="40"></textarea>
+      <br>
+      <input id="submit" type="submit" value="Αποστολή">
+      <input type="reset" value="Καθαρισμός">
+      <p>&nbsp;&nbsp;&nbsp;* Τα πεδία είναι υποχρεωτικά</p>
+    </form>
+    <img src="images/tech.jpg" alt="tech support">
+  </main>
+  <footer>
+    <h2>Come Find Us:</h2>
+    <div class="social">
+      <a href="https://facebook.com">
+        <img src="images/facebook.png" alt="Facebook" width="32">
+      </a>
+      <a href="https://www.instagram.com">
+        <img src="images/instagram.png" alt="Instagram">
+      </a>
+      <a href="https://twitter.com">
+        <img src="images/x.png" alt="X-Twitter" width="32">
+      </a>
+    </div>
+    <a href="abouts-us.html">About us</a>
+    <p>&copy; 2023 PostIt</p>
+  </footer>
+</body>
+
+</html>
